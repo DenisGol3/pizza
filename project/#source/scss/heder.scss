@@ -1,0 +1,75 @@
+.heder-page {
+	
+	&__container {
+		width: 1200px;
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		z-index: 100;
+		
+	}
+
+	&__logo {
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		padding: 30px 50px;
+	}
+}
+.header-page {
+
+	&__phone {
+		
+	}
+}
+.btn {
+
+}
+
+.heder-page__hamburger{
+	display: none ;
+	margin-right: -15px;
+}
+//адаптив 1200px
+@media ( max-width: 1200px){
+	.heder-page__link{
+		font-size: 16px;
+	}
+	.phone__iteme{
+		font-size: 14px;
+		padding: 7px 7px ;
+	}
+}
+//адаптив 992px
+@media ( max-width: 992px){
+	.heder-page__nav{
+		display: none;
+	}
+	.heder-page__hamburger{
+		display: block ;
+	}
+	.heder-page{
+		padding: 5px 0;
+	}
+}
+//адаптив 480px
+@media ( max-width: 480px){
+	.phone{
+		display: none;
+	}
+}

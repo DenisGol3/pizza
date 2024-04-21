@@ -1,0 +1,82 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+//брекпоинти
+/*
+ig: 1200px
+md: 992px
+sm: 767px
+xs: 576px
+*/
+//шривти
+//FONS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+//ROBOTO
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
+//файли .css
+.bady{
+	font-family: 'roboto' sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.375;
+	color: #1f1f1f;
+}
+.container{
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+//подключения файла section
+@import "section.scss";
+//подключения файла heder
+@import "heder.scss";
+//подключения файла section-cotalog
+@import "catalog.scss";
+/* btn-menu start */
+.btn-menu{
+	background: none;
+	border-radius: 0;
+	cursor: pointer;
+	display: inline-block;
+	padding: 15px;
+	border: 0;
+}
+.btn-menu__box{
+	display: inline-block;
+	width: 40px;
+	height: 24px;
+}
+.btn-menu__iner{
+	background: #fff;
+	height: 4px;
+	width: 100%;
+	display: block;
+	top: 50%;
+	position: relative;
+}
+.btn-menu__iner::before,
+.btn-menu__iner::after{
+	content: '';
+	width: 100%;
+	height: 4px;
+	background: rgb(250, 244, 244);
+	position: absolute;
+	left: 0;
+	border-radius: 5px;
+}
+.btn-menu__iner::before{
+	top: -10px;
+}
+.btn-menu__iner::after{
+	bottom: -10px;
+}
+/* btn-menu end */
+/*catalog start*/
+.section{
+	padding: 110px 0;
+}
+@media (max-width:576px){
+	.section{
+		padding: 90ppx 0;
+	}
+}
+/*catalog  end*/
